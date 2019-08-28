@@ -1,0 +1,2088 @@
+/* line 1, C:/Users/omole grace/Documents/Edit/style3.scss */
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe; }
+
+/* line 7, C:/Users/omole grace/Documents/Edit/style3.scss */
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f2f2f2; }
+
+/* line 12, C:/Users/omole grace/Documents/Edit/style3.scss */
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f2f2f2; }
+
+/* line 16, C:/Users/omole grace/Documents/Edit/style3.scss */
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #aa8515; }
+
+/* line 21, C:/Users/omole grace/Documents/Edit/style3.scss */
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(45, 45, 45, 0.3);
+  margin-top: -30px;
+  padding-bottom: 60px; }
+  @media screen and (max-width: 600px) {
+    /* line 21, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .fixed {
+      margin-top: -10px;
+      padding-bottom: 0; } }
+
+/* line 36, C:/Users/omole grace/Documents/Edit/style3.scss */
+.modal_content {
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: none;
+  width: 100%;
+  float: right;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  z-index: 9999;
+  animation: scale_in .2s linear 1; }
+
+/* line 49, C:/Users/omole grace/Documents/Edit/style3.scss */
+.modal_content .fa {
+  color: #f2f2f2;
+  font-size: 30px;
+  float: right;
+  margin: 15px 15px 0 0; }
+
+/* line 55, C:/Users/omole grace/Documents/Edit/style3.scss */
+.modal_content ul {
+  text-align: center;
+  color: #f2f2f2;
+  margin: 100px auto 0 auto;
+  width: 22%;
+  height: 70px; }
+
+/* line 62, C:/Users/omole grace/Documents/Edit/style3.scss */
+.modal_content ul li {
+  list-style-type: none;
+  font-size: 40px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  transition: .2s ease-in-out;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-left: 0;
+  display: list-item; }
+
+/* line 75, C:/Users/omole grace/Documents/Edit/style3.scss */
+.modal_content li:hover {
+  color: #aa8515; }
+
+@media screen and (max-width: 600px) {
+  /* line 79, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .modal_content {
+    width: 100%; }
+  /* line 82, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .modal_content ul {
+    width: 28%; }
+  /* line 85, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .modal_content ul li {
+    font-size: 25px;
+    width: 100%; } }
+
+/* line 88, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap {
+  box-shadow: none;
+  position: relative; }
+
+/* line 92, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper {
+  padding-top: 40px;
+  height: 100px;
+  background-color: #fefefe;
+  box-shadow: none; }
+
+/* line 98, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper .logo {
+  padding-left: 100px;
+  width: 30%;
+  float: left;
+  margin-top: 18px; }
+
+/* line 104, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper .logo img {
+  height: auto;
+  width: 45%; }
+
+/* line 108, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper ul {
+  padding-right: 90px;
+  float: right; }
+
+/* line 112, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper ul li {
+  float: left;
+  color: #000; }
+
+/* line 116, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper ul li a {
+  color: #333;
+  font-weight: 700;
+  font-size: 20px; }
+
+/* line 121, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper ul li .navbar_contain {
+  width: 55px;
+  height: 55px;
+  float: right;
+  margin: 5px 0 0 15px;
+  cursor: pointer; }
+
+/* line 128, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper ul li .navbar_contain .navbar_1, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+  width: 35px;
+  height: 3px;
+  margin: auto;
+  background-color: #000;
+  border-radius: 5px; }
+
+/* line 135, C:/Users/omole grace/Documents/Edit/style3.scss */
+.header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+  margin-top: 5px; }
+
+@media screen and (max-width: 600px) {
+  /* line 139, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper ul li .navbar_contain .navbar_1, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+    height: 2px;
+    width: 26px; }
+  /* line 143, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper ul li a {
+    font-size: 16px;
+    margin-right: -15px; }
+  /* line 147, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap {
+    box-shadow: none; }
+  /* line 151, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper .logo {
+    float: left;
+    padding-left: 25px;
+    margin-top: 4px; }
+  /* line 156, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper .logo img {
+    width: 85%; }
+  /* line 159, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper ul {
+    margin-top: 0;
+    padding-right: 15px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 163, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper ul li .navbar_contain .navbar_1, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+    height: 2px;
+    width: 26px; }
+  /* line 167, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper ul li a {
+    font-size: 16px;
+    margin-right: -15px; }
+  /* line 171, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap {
+    box-shadow: none; }
+  /* line 175, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper .logo {
+    float: left;
+    padding-left: 55px;
+    margin-top: 4px; }
+  /* line 180, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper .logo img {
+    width: 80%; }
+  /* line 183, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .header-wrap .nav-wrapper ul {
+    margin-top: 0;
+    padding-right: 40px; } }
+
+/* line 188, C:/Users/omole grace/Documents/Edit/style3.scss */
+.frist {
+  margin-top: 80px;
+  padding: 0 90px;
+  box-shadow: none; }
+
+/* line 193, C:/Users/omole grace/Documents/Edit/style3.scss */
+.frist .card-title {
+  color: darkgoldenrod;
+  font-size: 40px;
+  font-weight: 700; }
+
+/* line 198, C:/Users/omole grace/Documents/Edit/style3.scss */
+.frist .card {
+  box-shadow: none;
+  background-color: transparent; }
+
+/* line 203, C:/Users/omole grace/Documents/Edit/style3.scss */
+.frist .card-image, .frist .quartre .card-image2, .quartre .frist .card-image2, .frist .quartre .card-image3, .quartre .frist .card-image3 {
+  background-image: url("Images/neptunn-brand-strategy-our-services.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 500px;
+  margin-top: 40px; }
+
+@media screen and (max-width: 600px) {
+  /* line 211, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .frist {
+    padding: 0 15px;
+    margin-top: 30px; }
+  /* line 216, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .frist .card-title {
+    font-size: 16px; }
+  /* line 219, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .frist .card-image, .frist .quartre .card-image2, .quartre .frist .card-image2, .frist .quartre .card-image3, .quartre .frist .card-image3 {
+    height: 300px;
+    margin-top: 20px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 224, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .frist {
+    padding: 0 30px;
+    margin-top: 30px; }
+  /* line 229, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .frist .card-title {
+    font-size: 25px; }
+  /* line 232, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .frist .card-image, .frist .quartre .card-image2, .quartre .frist .card-image2, .frist .quartre .card-image3, .quartre .frist .card-image3 {
+    height: 300px;
+    margin-top: 20px; } }
+
+/* line 236, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant {
+  margin-left: 60px; }
+
+/* line 239, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card {
+  box-shadow: none; }
+
+/* line 242, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-content {
+  color: #999; }
+
+/* line 245, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-content .card-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000; }
+
+/* line 250, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-content p {
+  color: #999;
+  font-weight: 400;
+  padding-top: 30px;
+  font-size: 20px; }
+
+/* line 256, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-action {
+  border: none; }
+
+/* line 259, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-action li {
+  font-size: 20px;
+  font-weight: 400;
+  color: #999; }
+
+/* line 264, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-action .list_1 {
+  float: left; }
+
+/* line 267, C:/Users/omole grace/Documents/Edit/style3.scss */
+.secant .card-action .list_2 {
+  float: right; }
+
+@media screen and (max-width: 600px) {
+  /* line 271, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant {
+    margin-left: 15px;
+    margin-top: 0;
+    padding: 0; }
+  /* line 275, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-content {
+    padding-left: 0; }
+  /* line 278, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-content .card-title {
+    font-size: 17px; }
+  /* line 281, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-content p {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 12px; }
+  /* line 285, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-action li {
+    font-size: 12px;
+    margin: 0;
+    padding: 0; }
+  /* line 291, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-action .list_2 {
+    float: left; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 294, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant {
+    margin-left: 30px;
+    margin-top: 0;
+    padding: 0; }
+  /* line 298, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-content {
+    padding-left: 0; }
+  /* line 301, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-content .card-title {
+    font-size: 17px; }
+  /* line 304, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-content p {
+    text-align: left;
+    padding-top: 10px;
+    font-size: 12px; }
+  /* line 308, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-action li {
+    font-size: 12px;
+    margin: 0;
+    padding: 0; }
+  /* line 314, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .secant .card-action .list_2 {
+    float: left; } }
+
+/* line 317, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_1 {
+  padding: 0 90px;
+  margin-top: 40px; }
+
+/* line 321, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_1 .card {
+  box-shadow: none; }
+
+/* line 324, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_1 .card-image, .third_1 .quartre .card-image2, .quartre .third_1 .card-image2, .third_1 .quartre .card-image3, .quartre .third_1 .card-image3 {
+  background-image: url(Images/neptunn-brand-identity-development-our-services.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 500px; }
+
+@media screen and (max-width: 600px) {
+  /* line 331, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_1 {
+    padding: 0px 15px; }
+  /* line 334, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_1 .card-title {
+    font-size: 17px; }
+  /* line 337, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_1 .card-image, .third_1 .quartre .card-image2, .quartre .third_1 .card-image2, .third_1 .quartre .card-image3, .quartre .third_1 .card-image3 {
+    height: 300px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 340, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_1 {
+    padding: 0 40px; } }
+
+/* line 342, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 {
+  margin-left: 60px; }
+
+/* line 345, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 .card {
+  box-shadow: none;
+  background-color: transparent; }
+
+/* line 350, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 .card-content {
+  color: #999; }
+
+/* line 353, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 .card-content .card-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000; }
+
+/* line 358, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 .card-content p {
+  color: #999;
+  font-weight: 400;
+  padding-top: 30px;
+  font-size: 20px; }
+
+/* line 364, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 h3 {
+  margin-top: 40px;
+  color: #000;
+  transition: .3s ease-in;
+  font-weight: 600;
+  font-size: 25px; }
+
+/* line 371, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 h3 a:hover {
+  color: #aa8515; }
+
+/* line 374, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_2 h3:after {
+  height: 3px;
+  width: 18%;
+  content: "";
+  display: block;
+  background-color: #aa8515;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+@media screen and (max-width: 600px) {
+  /* line 386, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 {
+    margin-left: 15px; }
+  /* line 388, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content {
+    padding: 0; }
+  /* line 392, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content .card-title {
+    font-size: 17px; }
+  /* line 395, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0; }
+  /* line 400, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content h3 {
+    font-size: 15px; }
+  /* line 402, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-image, .third_2 .quartre .card-image2, .quartre .third_2 .card-image2, .third_2 .quartre .card-image3, .quartre .third_2 .card-image3 {
+    height: 400px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 405, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 {
+    margin-left: 40px; }
+  /* line 407, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content {
+    padding: 0; }
+  /* line 411, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content .card-title {
+    font-size: 17px; }
+  /* line 414, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0; }
+  /* line 419, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-content h3 {
+    font-size: 15px; }
+  /* line 421, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_2 .card-image, .third_2 .quartre .card-image2, .quartre .third_2 .card-image2, .third_2 .quartre .card-image3, .quartre .third_2 .card-image3 {
+    height: 400px; } }
+
+/* line 425, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_3 {
+  padding: 0 80px;
+  background-color: transparent;
+  margin-top: 0; }
+
+/* line 430, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_3 .card {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0; }
+
+/* line 435, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_3 .card-content {
+  color: #999;
+  height: 150px;
+  padding-left: 0;
+  padding-top: 0; }
+
+/* line 441, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_3 .card-content .card-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000; }
+
+/* line 446, C:/Users/omole grace/Documents/Edit/style3.scss */
+.third_3 .card-content p {
+  color: #999;
+  font-weight: 400;
+  margin-top: 5px !important;
+  font-size: 18px; }
+
+@media screen and (max-width: 600px) {
+  /* line 452, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 {
+    margin: 0 25px;
+    padding: 0; }
+  /* line 457, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .okay {
+    margin: 0;
+    padding: 0; }
+  /* line 462, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .card .card-content {
+    padding: 0; }
+  /* line 466, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .card .card-content .card-title {
+    font-size: 15px; }
+  /* line 469, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .card .card-content p {
+    font-size: 12px;
+    padding: 0;
+    margin-top: 5px !important; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 476, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 {
+    margin: 0 55px;
+    padding: 0; }
+  /* line 481, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .okay {
+    margin: 0;
+    padding: 0; }
+  /* line 486, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .card .card-content {
+    padding: 0; }
+  /* line 490, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .card .card-content .card-title {
+    font-size: 15px; }
+  /* line 493, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .third_3 .card .card-content p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0; } }
+
+/* line 499, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre {
+  padding: 0 90px; }
+
+/* line 502, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .head {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 90px; }
+
+/* line 510, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .head h1 {
+  float: left;
+  color: #000;
+  margin: 30px 0 0 8px;
+  font-size: 40px;
+  font-weight: 700;
+  display: inline-block; }
+
+/* line 517, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .head p {
+  float: right;
+  color: #000;
+  margin: 35px 8px 0 0;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .2s ease-in;
+  font-weight: 600; }
+
+/* line 526, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .head p a {
+  font-weight: 600; }
+
+/* line 529, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .head p a:hover {
+  color: #aa8515; }
+
+/* line 532, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .head p:after {
+  height: 3px;
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: #aa8515;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+/* line 544, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card {
+  box-shadow: none;
+  background-color: transparent; }
+
+/* line 550, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card-image, .quartre .card-image2, .quartre .card-image3 {
+  background-image: url("Images/neptunn-praise-philemonn-neptann.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 250px;
+  margin-top: 40px; }
+
+/* line 556, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card-image2 {
+  background-image: url("Images/neptunn-okafor-ikechukwu-neptann.jpeg");
+  background-position: top; }
+
+/* line 561, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card-image3 {
+  background-image: url("Images/neptunn-oladimeji-timilehin-neptann.jpg"); }
+
+/* line 566, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .image:hover {
+  -webkit-animation: zoom .5s linear 1 both;
+  -webkit-transition: .5s linear; }
+
+/* line 571, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card-content {
+  padding: 0;
+  margin: 0; }
+
+/* line 575, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card-content h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+/* line 580, C:/Users/omole grace/Documents/Edit/style3.scss */
+.quartre .card-content p {
+  font-size: 25px;
+  color: #999;
+  font-weight: 400; }
+
+@media screen and (max-width: 600px) {
+  /* line 585, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre {
+    margin-left: 15px;
+    padding: 0; }
+  /* line 589, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .head {
+    padding: 10px;
+    margin: 20px 0 0 0;
+    height: 30px; }
+  /* line 594, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .head h1 {
+    font-size: 17px;
+    margin: 6px;
+    padding: 0; }
+  /* line 599, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .head p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0; }
+  /* line 604, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .card-content h2 {
+    font-size: 17px; }
+  /* line 607, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .card-content p {
+    font-size: 14px; }
+  /* line 610, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .col {
+    padding: 0 25px 0 12px; }
+  /* line 614, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .card .card-image, .quartre .card .card-image2, .quartre .card .card-image3 {
+    height: 250px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 617, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre {
+    margin-left: 40px;
+    padding: 0; }
+  /* line 621, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .head {
+    padding: 10px;
+    margin: 20px 0 0 0;
+    height: 30px; }
+  /* line 626, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .head h1 {
+    font-size: 17px;
+    margin: 6px;
+    padding: 0; }
+  /* line 631, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .head p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0; }
+  /* line 636, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .card-content h2 {
+    font-size: 17px; }
+  /* line 639, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .card-content p {
+    font-size: 14px; }
+  /* line 642, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .col {
+    padding: 0 25px 0 12px; }
+  /* line 646, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .quartre .card .card-image, .quartre .card .card-image2, .quartre .card .card-image3 {
+    height: 250px; } }
+
+/* line 648, C:/Users/omole grace/Documents/Edit/style3.scss */
+hr {
+  width: 93%;
+  margin: auto;
+  margin-top: 80px; }
+
+/* line 653, C:/Users/omole grace/Documents/Edit/style3.scss */
+.cinq {
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+/* line 661, C:/Users/omole grace/Documents/Edit/style3.scss */
+.cinq h2 {
+  color: #000;
+  font-size: 45px; }
+
+/* line 665, C:/Users/omole grace/Documents/Edit/style3.scss */
+.cinq a {
+  color: #000;
+  font-weight: 700; }
+
+/* line 669, C:/Users/omole grace/Documents/Edit/style3.scss */
+.cinq a button {
+  border: 3px solid #000;
+  padding: 12px;
+  transition: 0.2s ease-in;
+  background-color: transparent; }
+
+/* line 674, C:/Users/omole grace/Documents/Edit/style3.scss */
+.cinq a button:hover {
+  background-color: #aa8515;
+  border: 3px solid #aa8515;
+  color: #fff; }
+
+@media screen and (max-width: 600px) {
+  /* line 681, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .cinq {
+    width: 60%;
+    margin-top: 60px;
+    margin-bottom: 0; }
+  /* line 686, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .cinq h2 {
+    font-size: 22px; }
+  /* line 689, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .cinq a button {
+    padding: 5px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 694, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .cinq {
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 0; }
+  /* line 699, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .cinq h2 {
+    font-size: 22px; }
+  /* line 702, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .cinq a button {
+    padding: 5px; } }
+
+/* line 709, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 0 90px; }
+
+@media screen and (max-width: 600px) {
+  /* line 715, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .work {
+    padding: 0 15px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%; }
+  /* line 721, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .work .trois_1, .true {
+    margin-top: 20px; }
+  /* line 724, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .work .card-content .card-title {
+    font-size: 20px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 729, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .work {
+    padding: 0 40px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: 100%; }
+  /* line 735, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .work .trois_1, .true {
+    margin-top: 20px; }
+  /* line 738, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .work .card-content .card-title {
+    font-size: 20px; } }
+
+/* line 743, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card {
+  background-color: transparent;
+  transition: 0.3s ease-in;
+  cursor: pointer; }
+
+/* line 750, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card:hover .card-content .card-title {
+  color: #aa8515; }
+
+/* line 755, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card-image, .work .quartre .card-image2, .quartre .work .card-image2, .work .quartre .card-image3, .quartre .work .card-image3 {
+  height: 250px; }
+
+/* line 759, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card-image:hover, .work .quartre .card-image2:hover, .quartre .work .card-image2:hover, .work .quartre .card-image3:hover, .quartre .work .card-image3:hover {
+  -webkit-animation: zoom .5s linear 1 both;
+  -webkit-transition: .5s linear; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.95); }
+  to {
+    -webkit-transform: scale(0.98); } }
+
+/* line 770, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card-content {
+  margin: 0;
+  padding: 15px 0 0 0; }
+
+/* line 775, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card-content .card-title {
+  color: #000;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: .3s ease-in;
+  margin: 0;
+  padding: 0;
+  text-indent: 0; }
+
+/* line 784, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card-content .card-title:hover {
+  color: #aa8515; }
+
+/* line 787, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .fourth {
+  background-image: url("Images/ondo-fashion-week-orisa-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* line 792, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .first {
+  background-image: url("Images/115garage-logo-signature-application-stamp.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* line 798, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .third {
+  background-image: url("Images/orisun-cultural-and-arts-festival-participant-card-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* line 803, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .second {
+  background-image: url("Images/tastii-dish-packaging-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* line 809, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .sixe {
+  background-image: url("Images/futa-fashion-and-art-week-tags-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* line 815, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .fife {
+  background-image: url("Images/suss-n-cream-business-card-full-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+/* line 821, C:/Users/omole grace/Documents/Edit/style3.scss */
+.work .card {
+  box-shadow: none; }
+
+/* line 829, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux .fist .card-content, .trois .fist .card-content, .sept .fist .card-content {
+  padding-left: 0; }
+
+@media screen and (max-width: 600px) {
+  /* line 833, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .slider {
+    width: 88%;
+    margin-top: 30px;
+    height: 200px !important; }
+  /* line 838, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .slides {
+    height: 200px !important; }
+  /* line 841, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .slides h5 {
+    font-size: 20px;
+    margin: 0px 0 0 -20px !important; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 848, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .slider {
+    width: 88%;
+    margin-top: 30px;
+    height: 300px !important; }
+  /* line 853, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .slides {
+    height: 300px !important; }
+  /* line 856, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .slides h5 {
+    font-size: 20px;
+    margin: 0px 0 0 -20px !important; } }
+
+/* line 862, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux, .trois, .sept {
+  padding: 0 90px;
+  margin-top: 70px; }
+
+/* line 866, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux .fist, .trois .fist, .sept .fist {
+  float: left; }
+
+/* line 869, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux .fist .card-title, .trois .fist .card-title, .sept .fist .card-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: darkgoldenrod; }
+
+/* line 874, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux .fist h2, .trois .fist h2, .sept .fist h2 {
+  font-size: 32px;
+  font-weight: 700; }
+
+/* line 879, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux .fist p, .trois .fist p, .sept .fist p {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: .2em;
+  text-align: left; }
+
+/* line 886, C:/Users/omole grace/Documents/Edit/style3.scss */
+.deux .fist .card, .trois .fist .card, .sept .fist .card {
+  box-shadow: 0 0 0 0; }
+
+@media screen and (max-width: 600px) {
+  /* line 890, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux, .trois, .sept {
+    padding: 0 20px;
+    margin-top: 20px; }
+  /* line 894, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux .fist p, .trois .fist p, .sept .fist p {
+    font-size: 12px; }
+  /* line 898, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux .fist .card-title, .trois .fist .card-title, .sept .fist .card-title {
+    font-size: 11px; }
+  /* line 901, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .transparent {
+    border-bottom: 1px solid rgba(45, 45, 45, 0.2); }
+  /* line 904, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux .fist h2, .trois .fist h2, .sept .fist h2 {
+    font-size: 17px;
+    margin-top: 5px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 909, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux, .trois, .sept {
+    padding: 0 40px;
+    margin-top: 20px; }
+  /* line 913, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux .fist p, .trois .fist p, .sept .fist p {
+    font-size: 12px; }
+  /* line 917, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux .fist .card-title, .trois .fist .card-title, .sept .fist .card-title {
+    font-size: 11px; }
+  /* line 921, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .deux .fist h2, .trois .fist h2, .sept .fist h2 {
+    font-size: 17px;
+    margin-top: 5px; } }
+
+/* line 928, C:/Users/omole grace/Documents/Edit/style3.scss */
+.trois, .sept, .dix {
+  margin-top: 0; }
+
+/* line 931, C:/Users/omole grace/Documents/Edit/style3.scss */
+.dix {
+  width: 16%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 120px; }
+
+/* line 939, C:/Users/omole grace/Documents/Edit/style3.scss */
+.dix a {
+  color: #000;
+  font-weight: 900; }
+
+/* line 943, C:/Users/omole grace/Documents/Edit/style3.scss */
+.dix a button {
+  border: 3px solid #000;
+  padding: 12px;
+  font-size: 22px;
+  width: 100%;
+  background-color: transparent;
+  transition: .2s ease-in-out; }
+
+/* line 951, C:/Users/omole grace/Documents/Edit/style3.scss */
+.dix a button:hover {
+  background-color: darkgoldenrod;
+  border: 3px solid #fff; }
+
+@media screen and (max-width: 600px) {
+  /* line 956, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .dix {
+    width: 60%; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 959, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .dix {
+    padding: 0 10px; } }
+
+/* line 964, C:/Users/omole grace/Documents/Edit/style3.scss */
+.What {
+  padding: 0 90px;
+  margin-top: 55px; }
+
+/* line 969, C:/Users/omole grace/Documents/Edit/style3.scss */
+.What .what-card {
+  background-color: transparent;
+  box-shadow: none; }
+
+/* line 973, C:/Users/omole grace/Documents/Edit/style3.scss */
+.What .what-card .what-title {
+  color: #aa8515;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 40px; }
+
+/* line 978, C:/Users/omole grace/Documents/Edit/style3.scss */
+.What .what-card .what-card-content {
+  padding-left: 0; }
+
+/* line 981, C:/Users/omole grace/Documents/Edit/style3.scss */
+.What .what-card p {
+  color: #999;
+  padding-left: 0;
+  font-weight: 400;
+  font-size: 20px; }
+
+@media screen and (max-width: 600px) {
+  /* line 988, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What {
+    padding: 0 3px !important; }
+  /* line 991, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What .what-card .what-title {
+    font-size: 17px;
+    margin-bottom: 10px; }
+  /* line 995, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What .what-card p {
+    font-size: 13px;
+    margin-top: 0; }
+  /* line 999, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What .what-card .what-card-content {
+    padding-left: 12px;
+    padding-top: 0;
+    margin-top: -40px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1006, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What {
+    padding: 0 3px !important; }
+  /* line 1009, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What .what-card .what-title {
+    font-size: 17px;
+    margin-bottom: 10px; }
+  /* line 1013, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What .what-card p {
+    font-size: 13px;
+    margin-top: 0; }
+  /* line 1017, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .What .what-card .what-card-content {
+    padding-left: 30px;
+    padding-top: 0;
+    margin-top: -40px; } }
+
+/* line 1024, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined, .joined_2, .joiney, .joiney-2 {
+  padding: 0 100px;
+  margin: 0; }
+
+/* line 1029, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined .jain, .joiney .jain {
+  float: right; }
+
+/* line 1034, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined .texted, .joined_2 .texted, .joiney .texted, .joiney-2 .texted {
+  background-color: #aa8515;
+  color: #fff;
+  height: 500px;
+  font-weight: 700;
+  box-shadow: none;
+  padding: 0 15px;
+  border-radius: 0;
+  margin-left: 0; }
+
+/* line 1044, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined .texted .joined-title, .joined_2 .texted .card-title, .joiney .texted .card-title, .joiney-2 .texted .card-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 20px; }
+
+/* line 1051, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined .texted p, .joined_2 .texted p, .joiney .texted p, .joiney-2 .texted p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.8em;
+  margin-top: 30px; }
+
+/* line 1058, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined .imagery, .joined_2 .imagery, .joiney .imagery, .joiney-2 .imagery, .joined_2 .imagery_2, .joiney .imagery_3, .joiney-2 .imagery_4 {
+  height: 500px;
+  border-radius: 0;
+  background-image: url(Images/neptunn-brand-strategy-our-services.jpg);
+  margin-bottom: 0;
+  margin-top: 0;
+  background-size: cover;
+  box-shadow: none;
+  background-position: center; }
+
+/* line 1068, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined .jain, .joined_2 .jain, .joiney .jain, .joiney-2 .jain {
+  padding: 0; }
+
+@media screen and (max-width: 600px) {
+  /* line 1072, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined, .joined_2, .joiney, .joiney-2 {
+    padding: 0 25px; }
+  /* line 1074, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .texted, .joined_2 .texted, .joiney .texted, .joiney-2 .texted {
+    height: 250px;
+    padding: 0 5px; }
+  /* line 1078, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .texted .joined-title, .joined_2 .texted .card-title, .joiney .texted .card-title, .joiney-2 .texted .card-title {
+    font-size: 18px;
+    margin-top: 0; }
+  /* line 1082, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .texted p, .joined_2 .texted p, .joiney .texted p, .joiney-2 .texted p {
+    font-size: 13px;
+    line-height: 1.4em;
+    margin-top: 10px; }
+  /* line 1087, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .imagery, .joined_2 .imagery, .joiney .imagery, .joiney-2 .imagery, .joined_2 .imagery_2, .joiney .imagery_3, .joiney-2 .imagery_4 {
+    height: 250px; }
+  /* line 1090, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients {
+    width: 100%; }
+  /* line 1093, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients h1 {
+    font-size: 25px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1099, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined, .joined_2, .joiney, .joiney-2 {
+    padding: 0 40px; }
+  /* line 1101, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .texted, .joined_2 .texted, .joiney .texted, .joiney-2 .texted {
+    height: 200px;
+    padding: 0 5px; }
+  /* line 1105, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .texted .joined-title, .joined_2 .texted .card-title, .joiney .texted .card-title, .joiney-2 .texted .card-title {
+    font-size: 18px;
+    margin-top: 0; }
+  /* line 1109, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .texted p, .joined_2 .texted p, .joiney .texted p, .joiney-2 .texted p {
+    font-size: 13px;
+    line-height: 1.4em;
+    margin-top: 10px; }
+  /* line 1114, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .joined .imagery, .joined_2 .imagery, .joiney .imagery, .joiney-2 .imagery, .joined_2 .imagery_2, .joiney .imagery_3, .joiney-2 .imagery_4 {
+    height: 300px; }
+  /* line 1117, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients {
+    width: 100%; }
+  /* line 1120, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients h1 {
+    font-size: 25px; } }
+
+/* line 1124, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined_2 .imagery_2 {
+  background-image: url(Images/neptunn-brand-identity-development-our-services.jpg); }
+
+/* line 1127, C:/Users/omole grace/Documents/Edit/style3.scss */
+.texted {
+  margin-bottom: 0;
+  margin-top: 0; }
+
+/* line 1132, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined_2 .texted {
+  background-color: #c0c0c0;
+  color: #333; }
+
+/* line 1136, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined_2 .texted .joined-title {
+  color: #fff;
+  font-size: 40px; }
+
+/* line 1140, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joined_2 .texted p {
+  color: #333; }
+
+/* line 1142, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joiney .imagery_3 {
+  background-image: url(Images/marten-bjork-neptunn-digital-marketing-unsplash.jpg); }
+
+/* line 1145, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joiney .texted {
+  background-color: #eee;
+  color: #333; }
+
+/* line 1149, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joiney .texted p {
+  color: #333; }
+
+/* line 1152, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joiney-2 .imagery_4 {
+  background-image: url(Images/chuttersnap-neptunn-event-management-unsplash.jpg); }
+
+/* line 1155, C:/Users/omole grace/Documents/Edit/style3.scss */
+.joiney-2 .texted {
+  background-color: #333;
+  color: #fff; }
+
+/* line 1159, C:/Users/omole grace/Documents/Edit/style3.scss */
+.clients {
+  width: 100%;
+  height: 300px;
+  padding: 20px 60px;
+  margin: 80px 0 50px 0; }
+
+/* line 1166, C:/Users/omole grace/Documents/Edit/style3.scss */
+.clients h1 {
+  text-align: center;
+  font-size: 40px;
+  color: #000;
+  font-weight: 700; }
+
+/* line 1172, C:/Users/omole grace/Documents/Edit/style3.scss */
+.clients img {
+  height: auto;
+  width: 170px;
+  float: left;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 600px) {
+  /* line 1180, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients {
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-align: center; }
+    /* line 1185, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .clients img {
+      margin: 0 auto;
+      width: 100px; }
+  /* line 1191, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients h1 {
+    font-size: 25px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1198, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients {
+    width: 100%;
+    height: 300px;
+    padding: 20px 40px;
+    text-align: center; }
+    /* line 1203, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .clients img {
+      margin: 0 auto;
+      width: 100px; }
+  /* line 1209, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .clients h1 {
+    font-size: 25px; } }
+
+/* line 1213, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said {
+  padding: 0 90px;
+  font-weight: 400; }
+
+/* line 1217, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px; }
+
+/* line 1221, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said .card .card-content {
+  padding-left: 0; }
+
+/* line 1224, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said .card {
+  box-shadow: none;
+  background-color: transparent; }
+
+/* line 1229, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said .card p {
+  font-size: 17px;
+  color: #999; }
+
+/* line 1233, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said .card .card-action {
+  padding-left: 0;
+  border: none; }
+
+/* line 1237, C:/Users/omole grace/Documents/Edit/style3.scss */
+.said .card .card-action h3 {
+  font-size: 15px;
+  margin: 0;
+  color: #000;
+  font-weight: 700; }
+
+@media screen and (max-width: 600px) {
+  /* line 1244, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said {
+    padding: 0 15px; }
+  /* line 1246, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said h2 {
+    font-size: 25px;
+    margin-bottom: 0; }
+  /* line 1250, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card p {
+    font-size: 14px; }
+  /* line 1253, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card .card-content {
+    padding-left: 0; }
+  /* line 1256, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .client-1, .said .client-2, .said .client-3 {
+    border-bottom: #2d2d2d; }
+  /* line 1259, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card .card-action {
+    padding: 0;
+    margin: 0; }
+  /* line 1263, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card .card-action h3 {
+    font-size: 14px;
+    margin-top: 0; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1269, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said {
+    padding: 0 40px; }
+  /* line 1271, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said h2 {
+    font-size: 25px;
+    margin-bottom: 0; }
+  /* line 1275, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card p {
+    font-size: 11px; }
+  /* line 1278, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card .card-content {
+    padding-left: 0; }
+  /* line 1281, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .client-1, .said .client-2, .said .client-3 {
+    border-bottom: #2d2d2d; }
+  /* line 1284, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card .card-action {
+    padding: 0;
+    margin: 0; }
+  /* line 1288, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .said .card .card-action h3 {
+    font-size: 14px;
+    margin-top: 0; } }
+
+/* line 1293, C:/Users/omole grace/Documents/Edit/style3.scss */
+.fift {
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+/* line 1301, C:/Users/omole grace/Documents/Edit/style3.scss */
+.fift h2 {
+  color: #222;
+  font-size: 40px; }
+
+/* line 1305, C:/Users/omole grace/Documents/Edit/style3.scss */
+.fift a {
+  color: #222;
+  font-weight: 600; }
+
+/* line 1309, C:/Users/omole grace/Documents/Edit/style3.scss */
+.fift a button {
+  border: 3px solid #222;
+  padding: 12px;
+  background-color: transparent;
+  transition: .2s ease-in-out; }
+
+/* line 1315, C:/Users/omole grace/Documents/Edit/style3.scss */
+.fift a button:hover {
+  background-color: #aa8515;
+  border: 3px solid #aa8515;
+  color: #efefef; }
+
+@media screen and (max-width: 600px) {
+  /* line 1321, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .fift {
+    width: 60%;
+    margin-top: 100px; }
+  /* line 1324, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .fift h2 {
+    font-size: 22px; }
+  /* line 1327, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .fift a button {
+    padding: 5px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1333, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .fift {
+    width: 60%;
+    margin-top: 100px; }
+  /* line 1336, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .fift h2 {
+    font-size: 22px; }
+  /* line 1339, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .fift a button {
+    padding: 5px; } }
+
+/* line 1346, C:/Users/omole grace/Documents/Edit/style3.scss */
+.service-header1 {
+  padding: 0px 87px;
+  margin-top: 60px;
+  width: 100%; }
+
+/* line 1353, C:/Users/omole grace/Documents/Edit/style3.scss */
+.service-header1 .head h1 {
+  color: #aa8515;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: 700; }
+
+/* line 1360, C:/Users/omole grace/Documents/Edit/style3.scss */
+.service-header1 .head h2 {
+  font-size: 50px;
+  margin-top: 0; }
+
+/* line 1364, C:/Users/omole grace/Documents/Edit/style3.scss */
+.formed {
+  padding: 0 80px; }
+  @media screen and (max-width: 600px) {
+    /* line 1364, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .formed {
+      padding: 0 5px; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    /* line 1364, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .formed {
+      padding: 0 35px; } }
+
+@media screen and (max-width: 600px) {
+  /* line 1375, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .service-header1 {
+    padding: 0 15px;
+    margin-top: 20px; }
+  /* line 1380, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .service-header1 .head h1 {
+    font-size: 22px;
+    padding-left: 0;
+    margin: 0;
+    text-align: left !important; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1389, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .service-header1 {
+    margin: 15px -30px; }
+  /* line 1392, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .service-header1 .head h1 {
+    font-size: 22px; }
+  /* line 1395, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .service-header1 .col-md-9 h2 {
+    font-size: 20px; } }
+
+/* line 1397, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details {
+  font-weight: 400;
+  margin: 50px 0 100px 90px; }
+
+/* line 1404, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details .texti h2 {
+  font-size: 35px;
+  font-weight: 700; }
+
+/* line 1409, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details .texti h3 {
+  color: #777;
+  font-size: 25px; }
+
+/* line 1413, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details .texti span {
+  text-decoration: underline;
+  text-decoration-color: #aa8515;
+  transition: .3s ease-in;
+  cursor: pointer; }
+
+/* line 1418, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details .texti span a:hover {
+  color: #aa8515; }
+
+/* line 1421, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details .ad2 {
+  font-size: 25px;
+  color: #777;
+  font-style: italic; }
+  /* line 1425, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .ad2 .ad {
+    text-decoration: none; }
+
+/* line 1430, C:/Users/omole grace/Documents/Edit/style3.scss */
+.contact-details .texti span:hover {
+  color: #333; }
+
+@media screen and (max-width: 600px) {
+  /* line 1434, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details {
+    margin: -40px 0 0 25px; }
+  /* line 1437, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h2 {
+    font-size: 14px; }
+  /* line 1440, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h3 {
+    font-size: 12px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1443, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details {
+    margin: -40px 0 0 35px; }
+  /* line 1446, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h2 {
+    font-size: 14px; }
+  /* line 1449, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h3 {
+    font-size: 12px; } }
+
+/* line 1451, C:/Users/omole grace/Documents/Edit/style3.scss */
+a {
+  color: #000; }
+  /* line 1453, C:/Users/omole grace/Documents/Edit/style3.scss */
+  a .submit {
+    border: 3px solid #000;
+    padding: 12px;
+    font-size: 22px;
+    margin-left: 10px;
+    width: 20%;
+    font-weight: 500;
+    background-color: transparent;
+    transition: .2s ease-in-out; }
+  /* line 1463, C:/Users/omole grace/Documents/Edit/style3.scss */
+  a .submit:hover {
+    background-color: darkgoldenrod;
+    border: 3px solid #fff;
+    color: #fff; }
+
+@media screen and (max-width: 600px) {
+  /* line 1472, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .forme {
+    padding: 0 5px; }
+  /* line 1475, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-form {
+    margin: 20px 15px;
+    width: 80%; }
+  /* line 1479, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details {
+    margin-left: 16px; }
+  /* line 1482, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h2 {
+    font-size: 20px; }
+  /* line 1484, C:/Users/omole grace/Documents/Edit/style3.scss */
+  a {
+    color: #000; }
+    /* line 1486, C:/Users/omole grace/Documents/Edit/style3.scss */
+    a .submit {
+      font-size: 20px;
+      width: 50%;
+      padding: 5px;
+      margin-left: 11px; }
+  /* line 1494, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h3 {
+    font-size: 15px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1497, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .forme {
+    padding: 0 5px; }
+  /* line 1500, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-form {
+    margin: 20px 13px;
+    width: 80%; }
+  /* line 1505, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h2 {
+    font-size: 20px; }
+  /* line 1508, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .contact-details .texti h3 {
+    font-size: 15px; } }
+
+/* line 1512, C:/Users/omole grace/Documents/Edit/style3.scss */
+.neptans, .neptanss, .neptanss2 {
+  padding: 0 90px;
+  margin-top: 95px; }
+  /* line 1515, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .neptans h2, .neptanss h2, .neptanss2 h2 {
+    font-size: 50px;
+    color: #aa8515;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    font-weight: 700; }
+  /* line 1524, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .neptans .neptan .team .card-image, .neptanss .neptan .team .card-image, .neptanss2 .neptan .team .card-image, .neptans .neptan .team .quartre .card-image2, .quartre .neptans .neptan .team .card-image2, .neptanss .neptan .team .quartre .card-image2, .quartre .neptanss .neptan .team .card-image2, .neptanss2 .neptan .team .quartre .card-image2, .quartre .neptanss2 .neptan .team .card-image2, .neptans .neptan .team .quartre .card-image3, .quartre .neptans .neptan .team .card-image3, .neptanss .neptan .team .quartre .card-image3, .quartre .neptanss .neptan .team .card-image3, .neptanss2 .neptan .team .quartre .card-image3, .quartre .neptanss2 .neptan .team .card-image3 {
+    background-image: url(Images/neptunn-praise-philemonn-neptann.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 260px; }
+  @media screen and (max-width: 600px) {
+    /* line 1512, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .neptans, .neptanss, .neptanss2 {
+      padding: 0 20px;
+      margin-top: 20px; }
+      /* line 1535, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .neptans h2, .neptanss h2, .neptanss2 h2 {
+        font-size: 20px;
+        margin-left: 5px; }
+      /* line 1540, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .neptans .text-neptann .text-neptann2, .neptanss .text-neptann .text-neptann2, .neptanss2 .text-neptann .text-neptann2 {
+        padding-left: 0; }
+        /* line 1542, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .neptans .text-neptann .text-neptann2 h2, .neptanss .text-neptann .text-neptann2 h2, .neptanss2 .text-neptann .text-neptann2 h2 {
+          font-size: 20px; }
+        /* line 1545, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .neptans .text-neptann .text-neptann2 h3, .neptanss .text-neptann .text-neptann2 h3, .neptanss2 .text-neptann .text-neptann2 h3 {
+          font-size: 15px; }
+        /* line 1548, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .neptans .text-neptann .text-neptann2 p, .neptanss .text-neptann .text-neptann2 p, .neptanss2 .text-neptann .text-neptann2 p {
+          font-size: 13px; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    /* line 1512, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .neptans, .neptanss, .neptanss2 {
+      padding: 0 20px;
+      margin-top: 20px; }
+      /* line 1557, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .neptans h2, .neptanss h2, .neptanss2 h2 {
+        font-size: 20px;
+        margin-left: 5px; }
+      /* line 1562, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .neptans .text-neptann .text-neptann2, .neptanss .text-neptann .text-neptann2, .neptanss2 .text-neptann .text-neptann2 {
+        padding-left: 0; }
+        /* line 1564, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .neptans .text-neptann .text-neptann2 h2, .neptanss .text-neptann .text-neptann2 h2, .neptanss2 .text-neptann .text-neptann2 h2 {
+          font-size: 20px; }
+        /* line 1567, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .neptans .text-neptann .text-neptann2 h3, .neptanss .text-neptann .text-neptann2 h3, .neptanss2 .text-neptann .text-neptann2 h3 {
+          font-size: 15px; }
+        /* line 1570, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .neptans .text-neptann .text-neptann2 p, .neptanss .text-neptann .text-neptann2 p, .neptanss2 .text-neptann .text-neptann2 p {
+          font-size: 13px; } }
+
+/* line 1581, C:/Users/omole grace/Documents/Edit/style3.scss */
+.neptanss .neptan .team2 .card-image, .neptanss .neptan .team2 .quartre .card-image2, .quartre .neptanss .neptan .team2 .card-image2, .neptanss .neptan .team2 .quartre .card-image3, .quartre .neptanss .neptan .team2 .card-image3 {
+  background-image: url(Images/neptunn-okafor-ikechukwu-neptann.jpeg);
+  background-position: top;
+  background-size: cover;
+  height: 260px; }
+
+/* line 1594, C:/Users/omole grace/Documents/Edit/style3.scss */
+.neptanss2 .team3 .card-image, .neptanss2 .team3 .quartre .card-image2, .quartre .neptanss2 .team3 .card-image2, .neptanss2 .team3 .quartre .card-image3, .quartre .neptanss2 .team3 .card-image3 {
+  background-image: url(Images/neptunn-oladimeji-timilehin-neptann.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 260px; }
+
+/* line 1603, C:/Users/omole grace/Documents/Edit/style3.scss */
+.text-neptann {
+  float: left; }
+  /* line 1605, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .text-neptann .text-neptann2 {
+    padding-left: 20px; }
+    /* line 1607, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 h2 {
+      font-size: 32px;
+      color: #000;
+      margin-top: 0;
+      margin-left: 0;
+      margin-bottom: 5px;
+      font-weight: 700; }
+    /* line 1615, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 h5 {
+      font-size: 22px;
+      color: #555;
+      margin-bottom: 5px;
+      font-weight: 600; }
+    /* line 1621, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 p {
+      font-size: 17px;
+      color: #555; }
+
+@media screen and (max-width: 600px) {
+  padding: 0 20px;
+  margin-top: 20px;
+  /* line 1630, C:/Users/omole grace/Documents/Edit/style3.scss */
+  h2 {
+    font-size: 20px;
+    margin-left: 5px; }
+  /* line 1635, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .text-neptann .text-neptann2 {
+    padding-left: 0; }
+    /* line 1637, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 h2 {
+      font-size: 20px; }
+    /* line 1640, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 h3 {
+      font-size: 15px; }
+    /* line 1643, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 p {
+      font-size: 13px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  padding: 0 40px;
+  margin-top: 20px;
+  /* line 1652, C:/Users/omole grace/Documents/Edit/style3.scss */
+  h2 {
+    font-size: 20px;
+    margin-left: 5px; }
+  /* line 1657, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .text-neptann .text-neptann2 {
+    padding-left: 0; }
+    /* line 1659, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 h2 {
+      font-size: 20px; }
+    /* line 1662, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 h3 {
+      font-size: 15px; }
+    /* line 1665, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .text-neptann .text-neptann2 p {
+      font-size: 13px; } }
+
+/* line 1672, C:/Users/omole grace/Documents/Edit/style3.scss */
+.neptanss {
+  margin-top: 25px; }
+
+/* line 1676, C:/Users/omole grace/Documents/Edit/style3.scss */
+.neptanss:nth-child(2) {
+  margin-bottom: 90px; }
+
+/* line 1683, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 {
+  padding: 0 90px;
+  margin-bottom: 95px; }
+  /* line 1686, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 h1 {
+    font-size: 45px;
+    font-weight: 700;
+    font-weight: bold;
+    margin-left: 12px; }
+
+/* line 1694, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 .fist {
+  float: left; }
+
+/* line 1697, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 .fist .card-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: darkgoldenrod; }
+
+/* line 1702, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 .fist h2 {
+  font-size: 32px;
+  font-weight: 700; }
+
+/* line 1706, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 .fist .card-content {
+  padding-left: 0; }
+
+/* line 1709, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 .fist p {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: .2em;
+  text-align: left; }
+
+/* line 1716, C:/Users/omole grace/Documents/Edit/style3.scss */
+.journal2 .fist .card {
+  box-shadow: 0 0 0 0; }
+
+@media screen and (max-width: 600px) {
+  /* line 1720, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 {
+    padding: 0 20px;
+    margin-top: 10px; }
+    /* line 1723, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .journal2 h1 {
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-left: 5px; }
+  /* line 1729, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 .fist p {
+    font-size: 12px; }
+  /* line 1732, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 .fist .card-title {
+    font-size: 11px; }
+  /* line 1735, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .transparent {
+    border-bottom: 1px solid rgba(45, 45, 45, 0.2); }
+  /* line 1738, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 .fist h2 {
+    font-size: 17px;
+    margin-top: 5px; } }
+
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  /* line 1743, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 {
+    padding: 0 20px;
+    margin-top: 10px; }
+    /* line 1746, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .journal2 h1 {
+      font-size: 20px;
+      margin-bottom: 0;
+      margin-left: 5px; }
+  /* line 1752, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 .fist p {
+    font-size: 12px; }
+  /* line 1755, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 .fist .card-title {
+    font-size: 11px; }
+  /* line 1758, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .transparent {
+    border-bottom: 1px solid rgba(45, 45, 45, 0.2); }
+  /* line 1761, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .journal2 .fist h2 {
+    font-size: 17px;
+    margin-top: 5px; } }
+
+/* line 1768, C:/Users/omole grace/Documents/Edit/style3.scss */
+.page-footer {
+  background-color: black;
+  height: 450px; }
+  /* line 1771, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .page-footer .container {
+    width: 100%;
+    height: 170px; }
+  /* line 1775, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .page-footer .subscribe {
+    padding-left: 70px; }
+    /* line 1778, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .subscribe h2 {
+      margin-bottom: 20px;
+      font-size: 45px;
+      font-weight: 600; }
+    /* line 1783, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .subscribe form {
+      float: left;
+      width: 60%; }
+      /* line 1786, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .subscribe form input[type=email] {
+        width: 95%;
+        margin-top: 5px;
+        height: 60px;
+        color: #333;
+        padding-left: 35px;
+        background-color: #fff !important; }
+      /* line 1794, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .subscribe form ::placeholder {
+        font-size: 15px;
+        color: #a0a0a0; }
+    /* line 1800, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .subscribe a {
+      color: #fff;
+      font-weight: 600; }
+      /* line 1803, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .subscribe a button {
+        border: 3px solid #fff;
+        padding: 12px;
+        height: 60px;
+        margin-top: 5px;
+        margin-left: 15px;
+        transition: .2s ease-in-out;
+        background-color: transparent; }
+      /* line 1812, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .subscribe a button:hover {
+        background-color: #fff;
+        border: 3px solid #fff;
+        color: #333; }
+  /* line 1820, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .page-footer .foot {
+    padding-top: 20px;
+    border-top: 2px solid #2d2d2d; }
+  /* line 1824, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .page-footer .email {
+    padding-left: 110px;
+    font-size: 14px;
+    color: #666;
+    font-size: 18px;
+    font-weight: 500; }
+    /* line 1830, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .email h5 {
+      margin: 25px 0 -20px 0;
+      padding: 0;
+      font-size: 14px;
+      font-weight: 600; }
+    /* line 1836, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .email a {
+      color: #666;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .2s ease-in-out; }
+    /* line 1842, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .email a:after {
+      height: 3px;
+      width: 60%;
+      content: "";
+      display: block;
+      background-color: #aa8515;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    /* line 1853, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .email a:hover {
+      color: #a0a0a0; }
+  /* line 1857, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .page-footer .links {
+    color: #666; }
+    /* line 1860, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .links a {
+      color: #666;
+      font-size: 18px;
+      font-weight: 600;
+      transition: .2s ease-in-out; }
+      /* line 1865, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .links a li {
+        padding: 2px;
+        width: 10%;
+        font-size: 14px; }
+    /* line 1871, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .links a:hover {
+      color: #a0a0a0; }
+    /* line 1874, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .links li:after {
+      height: 3px;
+      width: 100%;
+      content: "";
+      display: block;
+      background-color: #aa8515;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+  /* line 1886, C:/Users/omole grace/Documents/Edit/style3.scss */
+  .page-footer .icon {
+    color: #666;
+    font-size: 14px;
+    font-weight: 700; }
+    /* line 1891, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .icon .fa {
+      color: #666;
+      margin-top: 30px;
+      font-size: 17px;
+      padding-left: 20px;
+      transition: .2s ease-in-out; }
+    /* line 1898, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .icon .fa-twitter {
+      padding-left: 0; }
+    /* line 1901, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer .icon .fa:hover {
+      color: #aa8515; }
+  @media screen and (max-width: 600px) {
+    /* line 1768, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer {
+      height: 570px; }
+      /* line 1907, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .subscribe {
+        padding: 15px 25px;
+        width: 100%; }
+        /* line 1910, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe h2 {
+          font-size: 30px; }
+        /* line 1914, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe form input[type=email] {
+          width: 90%;
+          height: 40px;
+          padding-left: 20px; }
+        /* line 1920, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe a {
+          font-weight: 700;
+          font-size: 12px; }
+          /* line 1923, C:/Users/omole grace/Documents/Edit/style3.scss */
+          .page-footer .subscribe a button {
+            padding: 4px;
+            height: 40px; }
+        /* line 1928, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe ::placeholder {
+          font-size: 10px; }
+      /* line 1932, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .email {
+        padding-left: 25px; }
+        /* line 1934, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .email a {
+          font-size: 12px; }
+      /* line 1938, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .links {
+        float: right;
+        text-align: right; }
+        /* line 1941, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .links a {
+          font-size: 12px; }
+      /* line 1945, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .icon {
+        text-align: left;
+        border-top: 2px solid #2d2d2d;
+        padding-left: 25px; }
+        /* line 1949, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .icon p {
+          font-size: 12px; } }
+  @media screen and (min-width: 600px) and (max-width: 960px) {
+    /* line 1768, C:/Users/omole grace/Documents/Edit/style3.scss */
+    .page-footer {
+      height: 570px; }
+      /* line 1957, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .subscribe {
+        padding: 15px 40px;
+        width: 100%; }
+        /* line 1960, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe h2 {
+          font-size: 40px; }
+        /* line 1963, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe input[type=text] {
+          width: 50%;
+          height: 40px; }
+        /* line 1967, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .subscribe a {
+          font-weight: 700;
+          font-size: 12px; }
+          /* line 1970, C:/Users/omole grace/Documents/Edit/style3.scss */
+          .page-footer .subscribe a button {
+            padding: 4px;
+            height: 40px; }
+      /* line 1976, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .email {
+        padding-left: 40px; }
+        /* line 1978, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .email a {
+          font-size: 19px; }
+      /* line 1982, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .links {
+        float: right;
+        text-align: right; }
+        /* line 1985, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .links a {
+          font-size: 19px; }
+      /* line 1989, C:/Users/omole grace/Documents/Edit/style3.scss */
+      .page-footer .icon {
+        text-align: left;
+        border-top: 2px solid #2d2d2d;
+        padding-left: 40px; }
+        /* line 1993, C:/Users/omole grace/Documents/Edit/style3.scss */
+        .page-footer .icon p {
+          font-size: 10px; } }
+
+/*# sourceMappingURL=style3.css.map */

@@ -1,0 +1,1999 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fefefe; }
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f2f2f2; }
+
+body::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f2f2f2; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #aa8515; }
+
+.fixed {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 9999;
+  border-bottom: 1px solid rgba(45, 45, 45, 0.3);
+  margin-top: -30px;
+  padding-bottom: 60px;
+	@media screen and (max-width: 600px) {
+		margin-top: -10px;
+		padding-bottom: 0;
+	}
+
+}
+
+.modal_content {
+  top: 0;
+  left: 0;
+  overflow: auto;
+  display: none;
+  width: 100%;
+  float: right;
+  height: 100%;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95));
+  z-index: 9999;
+  animation: scale_in .2s linear 1; }
+
+.modal_content .fa {
+  color: #f2f2f2;
+  font-size: 30px;
+  float: right;
+  margin: 15px 15px 0 0; }
+
+.modal_content ul {
+  text-align: center;
+  color: #f2f2f2;
+  margin: 100px auto 0 auto;
+  width: 22%;
+  height: 70px; }
+
+.modal_content ul li {
+  list-style-type: none;
+  font-size: 40px;
+  font-weight:600;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  transition: .2s ease-in-out;
+  margin-left: 0px;
+  padding-top: 10px;
+  padding-left: 0;
+  display: list-item; }
+
+.modal_content li:hover {
+  color: #aa8515; }
+
+@media screen and (max-width: 600px) {
+  .modal_content {
+    width: 100%; }
+
+  .modal_content ul {
+    width: 28%; }
+
+  .modal_content ul li {
+    font-size: 25px;
+    width: 100%; } }
+.header-wrap {
+  box-shadow: none;
+  position: relative; }
+
+.header-wrap .nav-wrapper {
+  padding-top: 40px;
+  height: 100px;
+  background-color: #fefefe;
+  box-shadow: none; }
+
+.header-wrap .nav-wrapper .logo {
+  padding-left: 100px;
+  width: 30%;
+  float: left;
+  margin-top: 18px; }
+
+.header-wrap .nav-wrapper .logo img {
+  height: auto;
+  width: 45%; }
+
+.header-wrap .nav-wrapper ul {
+  padding-right: 90px;
+  float: right; }
+
+.header-wrap .nav-wrapper ul li {
+  float: left;
+  color: #000; }
+
+.header-wrap .nav-wrapper ul li a {
+  color: #333;
+  font-weight: 700;
+  font-size: 20px; }
+
+.header-wrap .nav-wrapper ul li .navbar_contain {
+  width: 55px;
+  height: 55px;
+  float: right;
+  margin: 5px 0 0 15px;
+  cursor: pointer; }
+
+.header-wrap .nav-wrapper ul li .navbar_contain .navbar_1, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+  width: 35px;
+  height: 3px;
+  margin: auto;
+  background-color: #000;
+  border-radius: 5px; }
+
+.header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+  margin-top: 5px; }
+
+@media screen and (max-width: 600px) {
+	.header-wrap .nav-wrapper ul li .navbar_contain .navbar_1, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+		height: 2px;
+		width: 26px;
+	}
+	.header-wrap .nav-wrapper ul li a{
+		font-size: 16px;
+		margin-right: -15px;
+	}
+  .header-wrap {
+    box-shadow: none;
+	}
+	
+  .header-wrap .nav-wrapper .logo {
+    float: left;
+    padding-left: 25px;
+    margin-top: 4px; }
+
+  .header-wrap .nav-wrapper .logo img {
+    width: 85%; }
+
+  .header-wrap .nav-wrapper ul {
+    margin-top: 0;
+    padding-right: 15px; } }
+	@media screen and (min-width:600px) and (max-width:960px){
+	.header-wrap .nav-wrapper ul li .navbar_contain .navbar_1, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_2, .header-wrap .nav-wrapper ul li .navbar_contain .navbar_3 {
+		height: 2px;
+		width: 26px;
+	}
+	.header-wrap .nav-wrapper ul li a{
+		font-size: 16px;
+		margin-right: -15px;
+	}
+  .header-wrap {
+    box-shadow: none;
+	}
+	
+  .header-wrap .nav-wrapper .logo {
+    float: left;
+    padding-left: 55px;
+    margin-top: 4px; }
+
+  .header-wrap .nav-wrapper .logo img {
+    width: 80%; }
+
+  .header-wrap .nav-wrapper ul {
+    margin-top: 0;
+    padding-right: 40px; }
+	}
+//ABOUT US
+.frist {
+  margin-top: 80px;
+  padding: 0 90px;
+  box-shadow: none; }
+
+.frist .card-title {
+  color: darkgoldenrod;
+  font-size: 40px;
+  font-weight: 700; }
+
+.frist .card {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.frist .card-image {
+  background-image: url("Images/neptunn-brand-strategy-our-services.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 500px;
+  margin-top: 40px; }
+
+@media screen and (max-width: 600px) {
+  .frist {
+    padding:0 15px;
+	margin-top: 30px;
+	}
+
+  .frist .card-title {
+    font-size: 16px; }
+
+  .frist .card-image {
+    height: 300px;
+	margin-top: 20px;
+	} }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .frist {
+    padding:0 30px;
+	margin-top: 30px;
+	}
+
+  .frist .card-title {
+    font-size: 25px; }
+
+  .frist .card-image {
+    height: 300px;
+	margin-top: 20px;
+	} }
+.secant {
+  margin-left: 60px; }
+
+.secant .card {
+  box-shadow: none; }
+
+.secant .card-content {
+  color: #999; }
+
+.secant .card-content .card-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000; }
+
+.secant .card-content p {
+  color: #999;
+  font-weight:400;
+  padding-top: 30px;
+  font-size: 20px; }
+
+.secant .card-action {
+  border: none; }
+
+.secant .card-action li {
+  font-size: 20px;
+  font-weight: 400;
+  color: #999; }
+
+.secant .card-action .list_1 {
+  float: left; }
+
+.secant .card-action .list_2 {
+  float: right; }
+
+@media screen and (max-width: 600px) {
+  .secant {
+    margin-left: 15px;
+	margin-top: 0;
+    padding: 0; }
+	.secant .card-content{
+		padding-left: 0;
+	}
+  .secant .card-content .card-title {
+    font-size: 17px; }
+
+  .secant .card-content p {
+    text-align: left;
+	padding-top: 10px;
+    font-size: 12px; }
+	.secant .card-action li{
+		font-size:12px;
+		margin: 0;
+		padding: 0;
+	}
+
+  .secant .card-action .list_2 {
+    float: left; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+ .secant {
+    margin-left: 30px;
+	margin-top: 0;
+    padding: 0; }
+	.secant .card-content{
+		padding-left: 0;
+	}
+  .secant .card-content .card-title {
+    font-size: 17px; }
+
+  .secant .card-content p {
+    text-align: left;
+	padding-top: 10px;
+    font-size: 12px; }
+	.secant .card-action li{
+		font-size:12px;
+		margin: 0;
+		padding: 0;
+	}
+
+  .secant .card-action .list_2 {
+    float: left; }
+}
+.third_1 {
+  padding: 0 90px;
+  margin-top: 40px; }
+
+.third_1 .card {
+  box-shadow: none; }
+
+.third_1 .card-image {
+  background-image: url(Images/neptunn-brand-identity-development-our-services.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 500px; }
+
+@media screen and (max-width: 600px) {
+  .third_1 {
+    padding: 0px 15px; }
+
+  .third_1 .card-title {
+    font-size: 17px; }
+
+  .third_1 .card-image {
+    height: 300px; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .third_1 {
+    padding: 0 40px; } }
+.third_2 {
+  margin-left: 60px; }
+
+.third_2 .card {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.third_2 .card-content {
+  color: #999; }
+
+.third_2 .card-content .card-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #000; }
+
+.third_2 .card-content p {
+  color: #999;
+  font-weight: 400;
+  padding-top: 30px;
+  font-size: 20px; }
+
+.third_2 h3 {
+  margin-top: 40px;
+  color: #000;
+  transition: .3s ease-in;
+  font-weight: 600;
+  font-size: 25px; }
+
+.third_2 h3 a:hover{
+	color: #aa8515;
+}
+.third_2 h3:after {
+  height: 3px;
+  width: 18%;
+  content: "";
+  display: block;
+  background-color: #aa8515;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s; }
+
+@media screen and (max-width: 600px) {
+  .third_2 {
+    margin-left: 15px; }
+	.third_2 .card-content{
+		padding: 0;
+	}
+
+  .third_2 .card-content .card-title {
+    font-size: 17px; 
+	}
+	.third_2 .card-content p{
+		font-size:12px;
+		padding: 0;
+		margin: 0;
+	}
+	.third_2 .card-content h3{
+		font-size:15px;}
+  .third_2 .card-image {
+    height: 400px; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .third_2 {
+    margin-left:40px; }
+	.third_2 .card-content{
+		padding: 0;
+	}
+
+  .third_2 .card-content .card-title {
+    font-size: 17px; 
+	}
+	.third_2 .card-content p{
+		font-size:12px;
+		padding: 0;
+		margin: 0;
+	}
+	.third_2 .card-content h3{
+		font-size:15px;}
+  .third_2 .card-image {
+    height: 400px; }
+
+}
+.third_3 {
+  padding: 0 80px;
+  background-color: transparent;
+  margin-top: 0; }
+
+.third_3 .card {
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0; }
+
+.third_3 .card-content {
+  color: #999;
+	height: 150px;
+  padding-left: 0;
+  padding-top: 0; }
+
+.third_3 .card-content .card-title {
+  font-size: 25px;
+  font-weight: 600;
+  color: #000; }
+
+.third_3 .card-content p {
+  color: #999;
+  font-weight:400;
+  margin-top: 5px !important;
+  font-size: 18px; }
+@media screen and (max-width: 600px) {
+  .third_3 {
+	margin:0 25px;
+	padding: 0;
+	//border:1px solid blue;
+	}
+	.third_3 .okay{
+		margin: 0;
+		padding: 0;
+		//border:1px solid red;
+	}
+  .third_3 .card .card-content{
+	padding: 0;
+	}
+
+  .third_3 .card .card-content .card-title {
+    font-size: 15px; 
+	}
+  .third_3 .card .card-content p{
+	font-size:12px;
+	padding: 0;
+	margin-top: 5px !important;
+	}
+ }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+   .third_3 {
+	margin:0 55px;
+	padding: 0;
+	//border:1px solid blue;
+	}
+	.third_3 .okay{
+		margin: 0;
+		padding: 0;
+		//border:1px solid red;
+	}
+  .third_3 .card .card-content{
+	padding: 0;
+	}
+
+  .third_3 .card .card-content .card-title {
+    font-size: 15px; 
+	}
+  .third_3 .card .card-content p{
+	font-size:12px;
+	padding: 0;
+	margin: 0;
+	}
+}
+.quartre {
+  padding: 0 90px; }
+
+.quartre .head {
+  width: 100%;
+  margin: 0;
+	padding: 0;
+  height: 90px;
+  //border: 1px solid red;
+}
+
+.quartre .head h1 {
+  float: left;
+  color:#000;
+  margin:30px 0 0 8px;font-size: 40px;
+  font-weight: 700;
+  display: inline-block; }
+
+.quartre .head p {
+  float: right;
+  color: #000;
+  margin: 35px 8px 0 0;
+  font-size:20px;
+  cursor:pointer;
+  transition: .2s ease-in;
+  font-weight: 600;
+}
+.quartre .head p a{
+	font-weight: 600;
+}
+.quartre .head p a:hover{
+	color:#aa8515;
+}
+.quartre .head p:after{
+   height: 3px;
+  width: 100%;
+  content: "";
+  display: block;
+  background-color: #aa8515;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.quartre .card {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.quartre{
+	.card-image {
+	  background-image: url("Images/neptunn-praise-philemonn-neptann.jpg");
+	  background-position: top;
+	  background-size: cover;
+	  height: 250px;
+	  margin-top: 40px; }
+	.card-image2{
+		@extend .card-image;
+		 background-image: url("Images/neptunn-okafor-ikechukwu-neptann.jpeg");
+		background-position: top;
+	}
+	.card-image3{
+		@extend .card-image;
+		 background-image: url("Images/neptunn-oladimeji-timilehin-neptann.jpg");
+	}
+}
+.quartre .image:hover{
+	 -webkit-animation: zoom .5s linear 1 both;
+  -webkit-transition: .5s linear;
+}
+
+.quartre .card-content {
+  padding: 0;
+  margin: 0; }
+
+.quartre .card-content h2 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 0; }
+
+.quartre .card-content p {
+  font-size: 25px;
+  color: #999;
+  font-weight: 400; }
+@media screen and (max-width: 600px) {
+  .quartre {
+    margin-left: 15px;
+	  padding: 0
+	}
+	.quartre .head{
+		padding:10px;
+		margin: 20px 0 0 0;
+		height:30px;
+	}
+	.quartre .head h1{
+		font-size:17px;
+		margin: 6px;
+		padding: 0;
+	}
+	.quartre .head  p{
+		font-size:14px;
+		padding: 0;
+		margin: 0;
+	}
+	.quartre .card-content h2{
+		font-size:17px;
+	}
+	.quartre .card-content p{
+		font-size:14px;
+	}
+	.quartre .col{
+		padding: 0 25px 0 12px;
+	}
+
+  .quartre .card .card-image {
+    height: 250px; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+.quartre {
+    margin-left: 40px;
+	  padding: 0
+	}
+	.quartre .head{
+		padding:10px;
+		margin: 20px 0 0 0;
+		height:30px;
+	}
+	.quartre .head h1{
+		font-size:17px;
+		margin: 6px;
+		padding: 0;
+	}
+	.quartre .head  p{
+		font-size:14px;
+		padding: 0;
+		margin: 0;
+	}
+	.quartre .card-content h2{
+		font-size:17px;
+	}
+	.quartre .card-content p{
+		font-size:14px;
+	}
+	.quartre .col{
+		padding: 0 25px 0 12px;
+	}
+
+  .quartre .card .card-image {
+    height: 250px; } }
+hr {
+  width: 93%;
+  margin: auto;
+  margin-top: 80px; }
+
+.cinq {
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+.cinq h2 {
+  color: #000;
+  font-size: 45px; }
+
+.cinq a {
+  color: #000;
+  font-weight: 700; }
+
+.cinq a button {
+  border: 3px solid #000;
+  padding: 12px;
+  transition: 0.2s ease-in;
+  background-color: transparent; }
+.cinq a button:hover{
+	background-color: #aa8515;
+	border:3px solid #aa8515;
+	color:#fff;
+}
+
+@media screen and (max-width: 600px) {
+  .cinq {
+    width: 60%;
+	margin-top: 60px;
+	margin-bottom: 0;
+	}
+	.cinq h2{
+		font-size:22px;
+	}
+	.cinq a button{
+		padding:5px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+.cinq {
+    width: 60%;
+	margin-top: 50px;
+	margin-bottom: 0;
+	}
+	.cinq h2{
+		font-size:22px;
+	}
+	.cinq a button{
+		padding:5px;
+	}
+
+}
+
+//OUR WORK
+.work {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 0 90px; }
+
+@media screen and (max-width: 600px) {
+  .work {
+    padding:0 15px;
+	margin-top: 40px;
+	  margin-bottom: 60px;
+	width:100%;
+	} 
+	.work .trois_1,.true{
+		margin-top:20px;
+	}
+	.work .card-content .card-title{
+		font-size:20px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+ 	.work {
+    padding:0 40px;
+	margin-top: 40px;
+	  margin-bottom: 60px;
+	width:100%;
+	} 
+	.work .trois_1,.true{
+		margin-top:20px;
+	}
+	.work .card-content .card-title{
+		font-size:20px;
+	}
+
+}
+.work .card{
+  background-color: transparent;
+  transition:0.3s ease-in;
+  cursor:pointer;
+}
+.work .card:hover{
+	.card-content{
+		.card-title{
+			color:#aa8515;
+		}
+	}
+}
+.work .card-image {
+  height: 250px;
+ }
+
+.work .card-image:hover {
+  -webkit-animation: zoom .5s linear 1 both;
+  -webkit-transition: .5s linear; }
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1); }
+  50% {
+    -webkit-transform: scale(0.95); }
+  to {
+    -webkit-transform: scale(0.98); } }
+.work .card-content {
+  margin: 0;
+	//width:100%;
+	padding: 15px 0 0 0; }
+
+.work .card-content .card-title {
+  color:#000;
+  font-weight: 600;
+  font-size: 20px;
+	cursor: pointer;
+  transition: .3s ease-in;
+  margin: 0;
+  padding: 0;
+  text-indent: 0; }
+.work .card-content .card-title:hover{
+	color:#aa8515;
+}
+.work  .fourth {
+  background-image: url("Images/ondo-fashion-week-orisa-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+.work .first {
+  background-image: url("Images/115garage-logo-signature-application-stamp.jpg");
+  background-position: center;
+  background-size: cover; }
+
+
+.work .third {
+  background-image: url("Images/orisun-cultural-and-arts-festival-participant-card-neptunn.jpg");
+  background-position: center;
+  background-size: cover;  }
+
+.work .second{
+  background-image: url("Images/tastii-dish-packaging-neptunn.jpg");
+  background-position: center;
+  background-size: cover; }
+
+
+.work .sixe{
+  background-image: url("Images/futa-fashion-and-art-week-tags-neptunn.jpg");
+  background-position: center;
+  background-size: cover; 
+}
+
+.work .fife{
+  background-image: url("Images/suss-n-cream-business-card-full-neptunn.jpg");
+  background-position: center;
+  background-size: cover; 
+}
+
+.work .card {
+  box-shadow: none;
+}
+
+
+
+//JOURNALS
+
+.deux .fist .card-content, .trois .fist .card-content, .sept .fist .card-content{
+	padding-left: 0;
+}
+@media screen and (max-width: 600px) {
+  .slider {
+    width: 88%;
+	margin-top: 30px;
+	height: 200px !important;
+	}
+	.slides{
+		height:200px !important;
+	}
+	.slides h5{
+		font-size:20px;
+	  margin:0px 0 0 -20px !important;
+	}
+	
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+   .slider {
+    width: 88%;
+	margin-top: 30px;
+	height: 300px !important;
+	}
+	.slides{
+		height:300px !important;
+	}
+	.slides h5{
+		font-size:20px;
+	  margin:0px 0 0 -20px !important;
+	}
+}
+
+.deux, .trois, .sept {
+  padding: 0 90px;
+  margin-top: 70px; }
+
+.deux .fist, .trois .fist, .sept .fist {
+  float: left; }
+
+.deux .fist .card-title, .trois .fist .card-title, .sept .fist .card-title {
+  font-size: 13px;
+  font-weight: 800;
+  color: darkgoldenrod; }
+
+.deux .fist h2, .trois .fist h2, .sept .fist h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.deux .fist p, .trois .fist p, .sept .fist p {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: .2em;
+  text-align: left; }
+
+.deux .fist .card, .trois .fist .card, .sept .fist .card {
+  box-shadow: 0 0 0 0; }
+
+@media screen and (max-width: 600px) {
+  .deux, .trois, .sept {
+    padding: 0 20px;
+    margin-top: 20px; }
+	
+	.deux .fist p, .trois .fist p, .sept .fist p {
+		font-size: 12px;
+	}
+
+  .deux .fist .card-title, .trois .fist .card-title, .sept .fist .card-title{
+		font-size:11px;
+	}
+	.transparent{
+		border-bottom:1px solid rgba(#2d2d2d, 0.2);
+	}
+	.deux .fist h2, .trois .fist h2, .sept .fist h2{
+		font-size:17px;
+		margin-top: 5px;
+	} }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .deux, .trois, .sept {
+    padding: 0 40px;
+    margin-top: 20px; }
+	
+	.deux .fist p, .trois .fist p, .sept .fist p {
+		font-size: 12px;
+	}
+
+  .deux .fist .card-title, .trois .fist .card-title, .sept .fist .card-title{
+		font-size:11px;
+	}
+	
+	.deux .fist h2, .trois .fist h2, .sept .fist h2{
+		font-size:17px;
+		margin-top: 5px;
+	}
+
+
+}
+.trois, .sept,.dix {
+  margin-top: 0; }
+
+.dix {
+  width: 16%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 120px; }
+
+.dix a {
+  color: #000;
+  font-weight: 900; }
+
+.dix a button {
+  border: 3px solid #000;
+  padding: 12px;
+  font-size: 22px;
+  width: 100%;
+  background-color: transparent;
+  transition: .2s ease-in-out; }
+
+.dix a button:hover {
+  background-color: darkgoldenrod;
+  border: 3px solid #fff; }
+
+@media screen and (max-width: 600px) {
+  .dix {
+    width: 60%; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .dix {
+    padding: 0 10px; } }
+
+
+//OUR SERVICES
+.What {
+  padding: 0 90px;
+  margin-top: 55px;
+}
+
+.What .what-card {
+  background-color: transparent;
+  box-shadow: none; }
+
+.What .what-card .what-title {
+  color: #aa8515;
+  margin-bottom: 25px;
+  font-weight: 800;
+  font-size: 40px; }
+.What .what-card .what-card-content{
+	padding-left: 0;
+}
+.What .what-card p {
+  color: #999;
+	padding-left: 0;
+  font-weight: 400;
+  font-size: 20px; }
+
+@media screen and (max-width: 600px) {
+  .What {
+    padding: 0 3px !important;
+	}
+	.What .what-card .what-title{
+		font-size:17px;
+		margin-bottom: 10px;
+	}
+	.What .what-card p{
+		font-size:13px;
+		margin-top: 0;
+	}
+	.What .what-card .what-card-content{
+		padding-left: 12px;
+		padding-top: 0;
+		margin-top:-40px;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+ .What {
+    padding: 0 3px !important;
+	}
+	.What .what-card .what-title{
+		font-size:17px;
+		margin-bottom: 10px;
+	}
+	.What .what-card p{
+		font-size:13px;
+		margin-top: 0;
+	}
+	.What .what-card .what-card-content{
+		padding-left: 30px;
+		padding-top: 0;
+		margin-top:-40px;
+	}
+
+}
+.joined, .joined_2, .joiney, .joiney-2 {
+  padding: 0 100px;
+  margin: 0; }
+
+.joined,.joiney{
+	.jain{
+		float:right;
+	}
+}
+
+.joined .texted, .joined_2 .texted, .joiney .texted, .joiney-2 .texted {
+  background-color: #aa8515;
+  color: #fff;
+  height: 500px;
+  font-weight: 700;
+  box-shadow: none;
+	padding: 0 15px;
+  border-radius: 0;
+  margin-left: 0; }
+
+.joined .texted .joined-title, .joined_2 .texted .card-title, .joiney .texted .card-title, .joiney-2 .texted .card-title {
+  font-size:30px;
+	font-weight: 700;
+	margin-top: 20px;
+  //color: #fff;
+}
+
+.joined .texted p, .joined_2 .texted p, .joiney .texted p, .joiney-2 .texted p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height:1.8em;
+  margin-top: 30px; }
+
+.joined .imagery, .joined_2 .imagery, .joiney .imagery, .joiney-2 .imagery, .joined_2 .imagery_2, .joiney .imagery_3, .joiney-2 .imagery_4 {
+  height: 500px;
+  border-radius: 0;
+  background-image: url(Images/neptunn-brand-strategy-our-services.jpg);
+  margin-bottom: 0;
+	margin-top: 0;
+  background-size: cover;
+  box-shadow: none;
+  background-position: center; }
+
+.joined .jain, .joined_2 .jain, .joiney .jain, .joiney-2 .jain {
+  padding: 0; }
+
+@media screen and (max-width: 600px) {
+  .joined, .joined_2, .joiney, .joiney-2 {
+    padding: 0 25px; }
+	.joined .texted, .joined_2 .texted, .joiney .texted, .joiney-2 .texted {
+		height:250px;
+		padding: 0 5px;
+	}
+	.joined .texted .joined-title, .joined_2 .texted .card-title, .joiney .texted .card-title, .joiney-2 .texted .card-title{
+		font-size:18px;
+		margin-top: 0;
+	}
+	.joined .texted p, .joined_2 .texted p, .joiney .texted p, .joiney-2 .texted p{
+		font-size:13px;
+		line-height:1.4em;
+		margin-top: 10px;
+	}
+	.joined .imagery, .joined_2 .imagery, .joiney .imagery, .joiney-2 .imagery, .joined_2 .imagery_2, .joiney .imagery_3, .joiney-2 .imagery_4 {
+	height:250px;
+}
+	.clients{
+		width:100%;
+	}
+	.clients h1{
+		font-size:25px;
+	}
+
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .joined, .joined_2, .joiney, .joiney-2 {
+    padding: 0 40px; }
+	.joined .texted, .joined_2 .texted, .joiney .texted, .joiney-2 .texted {
+		height:200px;
+		padding: 0 5px;
+	}
+	.joined .texted .joined-title, .joined_2 .texted .card-title, .joiney .texted .card-title, .joiney-2 .texted .card-title{
+		font-size:18px;
+		margin-top: 0;
+	}
+	.joined .texted p, .joined_2 .texted p, .joiney .texted p, .joiney-2 .texted p{
+		font-size:13px;
+		line-height:1.4em;
+		margin-top: 10px;
+	}
+	.joined .imagery, .joined_2 .imagery, .joiney .imagery, .joiney-2 .imagery, .joined_2 .imagery_2, .joiney .imagery_3, .joiney-2 .imagery_4 {
+	height:300px;
+}
+	.clients{
+		width:100%;
+	}
+	.clients h1{
+		font-size:25px;
+	}
+}
+.joined_2 .imagery_2 {
+  background-image: url(Images/neptunn-brand-identity-development-our-services.jpg);
+}
+.texted{
+	margin-bottom: 0;
+	margin-top: 0;
+
+}
+.joined_2 .texted {
+  background-color: #c0c0c0;
+  color: #333; }
+
+.joined_2 .texted .joined-title {
+  color: #fff;
+  font-size:40px;
+}
+.joined_2 .texted p {
+  color: #333; }
+.joiney .imagery_3 {
+  background-image: url(Images/marten-bjork-neptunn-digital-marketing-unsplash.jpg); }
+
+.joiney .texted {
+  background-color: #eee;
+  color: #333; }
+
+.joiney .texted p {
+  color: #333; }
+
+.joiney-2 .imagery_4 {
+  background-image: url(Images/chuttersnap-neptunn-event-management-unsplash.jpg); }
+
+.joiney-2 .texted {
+  background-color: #333;
+  color: #fff; }
+
+.clients {
+  width: 100%;
+  height: 300px;
+  padding: 20px 60px;
+  //border: 1px solid blue;
+  margin:80px 0 50px 0; }
+
+.clients h1 {
+  text-align: center;
+	font-size:40px;
+  color: #000;
+  font-weight: 700; }
+
+.clients img {
+  height: auto;
+  width:170px;
+  float:left;
+  margin: 0;
+  padding: 0; }
+
+@media screen and (max-width: 600px) {
+	.clients{
+		width:100%;
+		height: 300px;
+		padding: 20px;
+		text-align: center;
+		img{
+		margin: 0 auto;
+		width: 100px;
+		}
+	}
+	
+	.clients h1{
+		font-size:25px;
+	}
+
+
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+		.clients{
+		width:100%;
+		height: 300px;
+		padding: 20px 40px;
+		text-align: center;
+		img{
+		margin: 0 auto;
+		width: 100px;
+		}
+	}
+	
+	.clients h1{
+		font-size:25px;
+	}
+  }
+.said {
+  padding: 0 90px;
+  font-weight: 400; }
+
+.said h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px; }
+.said .card .card-content{
+	padding-left: 0;
+}
+.said .card {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.said .card p {
+  font-size: 17px;
+  color: #999; }
+
+.said .card .card-action {
+  padding-left: 0;
+  border: none; }
+
+.said .card .card-action h3 {
+  font-size: 15px;
+  margin: 0;
+  color:#000;
+  font-weight: 700; }
+
+@media screen and (max-width: 600px) {
+  .said {
+    padding: 0 15px; }
+	.said h2{
+		font-size:25px;
+		margin-bottom: 0;
+	}
+	.said .card p{
+		font-size:14px;
+	}
+	.said .card .card-content{
+		padding-left: 0;
+	}
+	.said .client-1, .said .client-2, .said .client-3{
+		border-bottom: #2d2d2d;
+	}
+	.said .card .card-action{
+		padding: 0;
+		margin: 0;
+	}
+	.said .card .card-action h3{
+		font-size:14px;
+		margin-top: 0;
+	}
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .said {
+    padding: 0 40px; }
+	.said h2{
+		font-size:25px;
+		margin-bottom: 0;
+	}
+	.said .card p{
+		font-size:11px;
+	}
+	.said .card .card-content{
+		padding-left: 0;
+	}
+	.said .client-1, .said .client-2, .said .client-3{
+		border-bottom: #2d2d2d;
+	}
+	.said .card .card-action{
+		padding: 0;
+		margin: 0;
+	}
+	.said .card .card-action h3{
+		font-size:14px;
+		margin-top: 0;
+	}
+}
+.fift {
+  width: 30%;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 120px; }
+
+.fift h2 {
+  color: #222;
+  font-size: 40px; }
+
+.fift a {
+  color: #222;
+  font-weight: 600; }
+
+.fift a button {
+  border: 3px solid #222;
+  padding: 12px;
+  background-color: transparent;
+  transition: .2s ease-in-out; }
+
+.fift a button:hover {
+  background-color: #aa8515;
+  border: 3px solid #aa8515;
+  color: #efefef; }
+
+@media screen and (max-width: 600px) {
+  .fift {
+    width: 60%;
+    margin-top: 100px; } 
+	.fift h2{
+		font-size: 22px;
+	}
+	.fift a button {
+		padding: 5px;
+	}
+
+}
+@media screen and (min-width: 600px) and (max-width: 960px) {
+ .fift {
+    width: 60%;
+    margin-top: 100px; } 
+	.fift h2{
+		font-size: 22px;
+	}
+	.fift a button {
+		padding: 5px;
+	}
+	
+}
+
+//OUR CONTACT
+.service-header1 {
+ padding: 0px 87px;
+ margin-top: 60px;
+	width:100%;
+  //font-weight: 700;
+}
+
+.service-header1 .head h1 {
+  color: #aa8515;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.service-header1 .head h2 {
+  font-size: 50px;
+  margin-top: 0;
+}
+.formed{
+	padding:0 80px;
+	@media screen and (max-width: 600px) {
+	padding: 0 5px;
+
+  }
+	@media screen and (min-width: 600px) and (max-width: 960px) {
+		padding: 0 35px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.service-header1{
+		padding:0 15px;
+		margin-top:20px;
+	}
+	
+  .service-header1 .head h1 {
+    font-size: 22px; 
+	  padding-left: 0;
+	  margin: 0;
+	  text-align:left !important;
+	}
+
+  }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .service-header1{
+		margin: 15px -30px;
+	}
+  .service-header1 .head h1 {
+    font-size: 22px; }
+
+  .service-header1 .col-md-9 h2 {
+    font-size: 20px; } }
+.contact-details {
+  font-weight: 400;
+  margin: 50px 0 100px 90px;
+	//height: 400px;
+  //float: left;
+}
+
+.contact-details .texti h2 {
+  font-size: 35px;
+   font-weight: 700;
+}
+
+.contact-details .texti h3 {
+  color: #777;
+  font-size: 25px; }
+
+.contact-details .texti span {
+  text-decoration: underline;
+  text-decoration-color: #aa8515;
+  transition: .3s ease-in;
+  cursor: pointer; }
+.contact-details .texti span a:hover{
+	color:#aa8515;
+}
+.contact-details .ad2{
+	font-size:25px;
+	color:#777;
+	font-style: italic;
+	.ad{
+		text-decoration: none;
+	}
+}
+
+.contact-details .texti span:hover {
+  color: #333; }
+
+@media screen and (max-width: 600px) {
+	.contact-details{
+		margin:-40px 0 0 25px 
+	}
+  .contact-details .texti h2 {
+    font-size: 14px; }
+
+  .contact-details .texti h3 {
+    font-size: 12px; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+ .contact-details{
+		margin:-40px 0 0 35px 
+	}
+  .contact-details .texti h2 {
+    font-size: 14px; }
+
+  .contact-details .texti h3 {
+    font-size: 12px; } }
+a{
+	color: #000;
+	.submit{
+		border: 3px solid #000;
+		padding: 12px;
+		font-size: 22px;
+		margin-left: 10px;
+		width: 20%;
+		font-weight: 500;
+		background-color: transparent;
+		transition: .2s ease-in-out; }
+
+	.submit:hover {
+		background-color: darkgoldenrod;
+		border: 3px solid #fff;
+		color:#fff;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.forme{
+	padding:0 5px;
+}
+	.contact-form{
+		margin: 20px 15px;
+		width:80%;
+	}
+		.contact-details {
+	margin-left: 16px;
+}
+  .contact-details .texti h2 {
+    font-size: 20px; }
+	a{
+	color: #000;
+	.submit{
+		font-size: 20px;
+		width: 50%;
+		padding: 5px;
+		margin-left:11px;
+	}
+}
+
+  .contact-details .texti h3 {
+    font-size: 15px; } }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .forme{
+	padding:0 5px;
+}
+	.contact-form{
+		margin: 20px 13px;
+		width:80%;
+	}
+
+  .contact-details .texti h2 {
+    font-size: 20px; }
+
+  .contact-details .texti h3 {
+    font-size: 15px; }}
+
+//NEPTANNS STYLES..//
+.neptans{
+	padding: 0 90px;
+	margin-top: 95px;
+	h2{
+		font-size:50px;
+		color:#aa8515;
+		margin-bottom: 40px;
+		margin-left: 5px;
+		font-weight:700;
+	}
+	.neptan{
+		.team{
+			.card-image{
+				background-image: url(Images/neptunn-praise-philemonn-neptann.jpg);
+				background-position: top;
+				background-size: cover;
+				height:260px;
+			}
+		}
+	}
+	@media screen and (max-width: 600px){
+		padding: 0 20px;
+		margin-top: 20px;
+		h2{
+			font-size:20px;
+			margin-left: 5px;
+		}
+		.text-neptann{
+			.text-neptann2{
+				padding-left: 0;
+				h2{
+					font-size:20px;
+				}
+				h3{
+					font-size:15px;
+				}
+				p{
+					font-size:13px;
+				}
+			}
+		}
+	}
+	@media screen and (min-width:600px) and (max-width:960px){
+		padding: 0 20px;
+		margin-top: 20px;
+		h2{
+			font-size:20px;
+			margin-left: 5px;
+		}
+		.text-neptann{
+			.text-neptann2{
+				padding-left: 0;
+				h2{
+					font-size:20px;
+				}
+				h3{
+					font-size:15px;
+				}
+				p{
+					font-size:13px;
+				}
+			}
+		}
+	}
+}
+	.neptanss{
+	@extend .neptans;
+		.neptan{
+			.team2{
+				.card-image{
+					background-image: url(Images/neptunn-okafor-ikechukwu-neptann.jpeg);
+					background-position: top;
+					background-size: cover;
+					height:260px;
+				}
+			}
+		}
+	}
+	
+	.neptanss2{
+		@extend .neptans;
+		.team3{
+			.card-image{
+				background-image: url(Images/neptunn-oladimeji-timilehin-neptann.jpg);
+				background-position: top;
+				background-size: cover;
+				height:260px;
+			}
+		}
+	}
+	
+	.text-neptann{
+		float:left;
+		.text-neptann2{
+			padding-left: 20px;
+			h2{
+				font-size:32px;
+				color:#000;
+				margin-top: 0;
+				margin-left: 0;
+				margin-bottom: 5px;
+				font-weight: 700;
+			}
+			h5{
+				font-size:22px;
+				color:#555;
+				margin-bottom: 5px;
+				font-weight: 600;
+			}
+			p{
+				font-size:17px;
+				color:#555;
+			}
+		}
+	}
+	@media screen and (max-width: 600px){
+		padding: 0 20px;
+		margin-top: 20px;
+		h2{
+			font-size:20px;
+			margin-left: 5px;
+		}
+		.text-neptann{
+			.text-neptann2{
+				padding-left: 0;
+				h2{
+					font-size:20px;
+				}
+				h3{
+					font-size:15px;
+				}
+				p{
+					font-size:13px;
+				}
+			}
+		}
+	}
+	@media screen and (min-width:600px) and (max-width:960px){
+		padding: 0 40px;
+		margin-top: 20px;
+		h2{
+			font-size:20px;
+			margin-left: 5px;
+		}
+		.text-neptann{
+			.text-neptann2{
+				padding-left: 0;
+				h2{
+					font-size:20px;
+				}
+				h3{
+					font-size:15px;
+				}
+				p{
+					font-size:13px;
+				}
+			}
+		}
+	}
+
+.neptanss{
+	@extend .neptans;
+	margin-top: 25px;
+}
+.neptanss:nth-child(2){
+	margin-bottom: 90px;
+}
+//..NEPTANNS ENDS...//
+
+
+//..JOURNAL2 STYLE BEGINS//
+.journal2 {
+  padding: 0 90px; 
+  margin-bottom: 95px;
+	h1{
+		font-size:45px;
+  		font-weight: 700;
+		font-weight: bold;
+		margin-left: 12px;
+	}
+}
+
+.journal2 .fist{
+  float: left; }
+
+ .journal2 .fist .card-title{
+  font-size: 13px;
+  font-weight: 700;
+  color: darkgoldenrod; }
+
+.journal2 .fist h2{
+  font-size: 32px;
+  font-weight: 700;
+}
+.journal2 .fist .card-content{
+	padding-left: 0;
+}
+.journal2 .fist p, {
+  color: #aaa;
+  font-size: 18px;
+  font-weight: 400;
+  word-spacing: .2em;
+  text-align: left; }
+
+.journal2 .fist .card{
+  box-shadow: 0 0 0 0; }
+
+@media screen and (max-width: 600px) {
+ .journal2 {
+     padding: 0 20px;
+    margin-top: 10px;
+	 h1{
+		 font-size:20px;
+		 margin-bottom:0;
+		 margin-left:5px;
+	 }
+	}
+	.journal2 .fist p{
+		font-size:12px;
+	}
+ .journal2 .fist .card-title{
+		font-size:11px;
+	}
+	.transparent{
+		border-bottom:1px solid rgba(#2d2d2d, 0.2);
+	}
+	.journal2 .fist h2{
+		font-size:17px;
+		margin-top: 5px;
+	} }
+@media screen and (min-width: 600px) and (max-width: 960px) {
+  .journal2 {
+     padding: 0 20px;
+    margin-top: 10px;
+	 h1{
+		 font-size:20px;
+		 margin-bottom:0;
+		 margin-left:5px;
+	 }
+	}
+	.journal2 .fist p{
+		font-size:12px;
+	}
+ .journal2 .fist .card-title{
+		font-size:11px;
+	}
+	.transparent{
+		border-bottom:1px solid rgba(#2d2d2d, 0.2);
+	}
+	.journal2 .fist h2{
+		font-size:17px;
+		margin-top: 5px;
+	} }
+
+
+//FOOTER
+.page-footer{
+	background-color: black;
+	height:450px;
+	.container{
+		width:100%;
+		height:170px;
+	}
+	.subscribe{
+		//border:1px solid red;
+		padding-left: 70px;
+		h2{
+			margin-bottom: 20px;
+			font-size:45px;
+			font-weight: 600;
+		}
+		form{
+			float:left;
+			width:60%;
+			input[type=email]{
+				width:95%;
+				margin-top: 5px;
+				height:60px;
+				color:#333;
+				padding-left: 35px;
+				background-color: #fff !important;
+			}
+			::placeholder{
+				font-size: 15px;
+				color:#a0a0a0;
+				//padding-left: 35px;
+			}
+		}
+		a{
+			color:#fff;
+			font-weight:600;
+			button{
+				border:3px solid #fff;
+				padding: 12px;
+				height: 60px;
+				margin-top: 5px;
+				margin-left: 15px;
+				transition: .2s ease-in-out;
+				background-color: transparent;
+			}
+			button:hover{
+				background-color:#fff;
+				border:3px solid #fff;
+				color: #333
+			}
+		}
+	}
+	
+	.foot{
+		padding-top:20px;
+		border-top:2px solid #2d2d2d;
+	}
+	.email{
+		padding-left:110px;
+		font-size:14px;
+		color: #666;
+		font-size:18px;
+		font-weight: 500;
+		h5{
+			margin: 25px 0 -20px 0;
+			padding: 0;
+			font-size:14px;
+			font-weight: 600;
+		}
+		a{
+			color:#666;
+			font-size:14px;
+			font-weight: 600;
+			transition: .2s ease-in-out;
+		}
+		a:after{
+			 height: 3px;
+			width: 60%;
+			content: "";
+			display: block;
+			background-color: #aa8515;
+			-webkit-transform: scaleX(1);
+			 transform: scaleX(1);
+			 -webkit-transition: all 0.3s ease-in-out 0s;
+			 transition: all 0.3s ease-in-out 0s;
+		}
+		a:hover{
+			color:#a0a0a0;
+		}
+	}
+	.links{
+		//border:1px solid red;
+		color: #666;
+		a{
+			color:#666;
+			font-size:18px;
+			font-weight: 600;
+			transition: .2s ease-in-out;
+			li{
+				padding: 2px;
+				width:10%;
+				font-size: 14px;
+			}
+		}
+		a:hover{
+			color:#a0a0a0;
+		}
+		li:after{
+			 height: 3px;
+			width: 100%;
+			content: "";
+			display: block;
+			 background-color: #aa8515;
+			-webkit-transform: scaleX(1);
+			 transform: scaleX(1);
+			 -webkit-transition: all 0.3s ease-in-out 0s;
+			 transition: all 0.3s ease-in-out 0s;
+    	}
+	}
+	.icon{
+		color:#666;
+		font-size:14px;
+		font-weight: 700;
+		
+		.fa{
+			color:#666;
+			margin-top: 30px;
+			font-size:17px;
+			padding-left: 20px;
+			transition: .2s ease-in-out;
+		}
+		.fa-twitter{
+			padding-left: 0;
+		}
+		.fa:hover{
+			color:#aa8515;
+		}
+	}
+	@media screen and (max-width: 600px){
+		height:570px;
+		.subscribe{
+			padding: 15px 25px;
+			width:100%;
+			h2{
+				font-size:30px;
+			}
+			form{
+				input[type=email]{
+					width:90%;
+					height:40px;
+					padding-left: 20px;
+				}
+			}
+			a{
+				font-weight: 700;
+				font-size:12px;
+				button{
+					padding: 4px;
+					height:40px;
+				}
+			}
+			::placeholder{
+				font-size:10px;
+			}
+		}
+		.email{
+			padding-left: 25px;
+			a{
+				font-size:12px;
+			}
+		}
+		.links{
+			float:right;
+			text-align: right;
+			a{
+				font-size:12px;
+			}
+		}
+		.icon{
+			text-align: left;
+			border-top:2px solid #2d2d2d;
+			padding-left: 25px;
+			p{
+				font-size:12px;
+			}
+			
+		}
+	}
+	@media screen and (min-width:600px) and (max-width:960px){
+		height:570px;
+		.subscribe{
+			padding: 15px 40px;
+			width:100%;
+			h2{
+				font-size:40px;
+			}
+			input[type=text]{
+				width:50%;
+				height:40px;
+			}
+			a{
+				font-weight: 700;
+				font-size:12px;
+				button{
+					padding: 4px;
+					height:40px;
+				}
+			}
+		}
+		.email{
+			padding-left: 40px;
+			a{
+				font-size:19px;
+			}
+		}
+		.links{
+			float:right;
+			text-align: right;
+		a{
+				font-size:19px;
+			}
+		}
+		.icon{
+			text-align: left;
+			border-top:2px solid #2d2d2d;
+			padding-left: 40px;
+			p{
+				font-size:10px;
+			}
+			
+		}
+	}
+}
